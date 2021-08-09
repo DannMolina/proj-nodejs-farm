@@ -1,6 +1,6 @@
-////////////////////////////////////////////
-// IMPORTS
-////////////////////////////////////////////
+/**
+ * * Imports
+ */
 // * core modules
 const fs = require("fs");
 const http = require("http");
@@ -8,9 +8,9 @@ const url = require("url");
 // * own module
 const replaceTemplate = require("./modules/replaceTemplate");
 
-////////////////////////////////////////////
-// SERVER
-////////////////////////////////////////////
+/**
+ * * SERVER
+ */
 
 // * front-end
 const tempOverview = fs.readFileSync(
