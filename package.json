@@ -1,0 +1,19 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "Learning node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DannMolina/proj-nodejs-farm.git"
+  },
+  "author": "Dann Russell Molina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DannMolina/proj-nodejs-farm/issues"
+  },
+  "homepage": "https://github.com/DannMolina/proj-nodejs-farm#readme"
+}
