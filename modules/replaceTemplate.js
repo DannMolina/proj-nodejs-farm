@@ -1,3 +1,5 @@
+const slugify = require("slugify");
+
 module.exports = (temp, product) => {
   // * global variables
   let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
@@ -8,7 +10,10 @@ module.exports = (temp, product) => {
   output = output.replace(/{%QUANTITY%}/g, product.quantity);
   output = output.replace(/{%ID%}/g, product.id);
   output = output.replace(/{%DESCRIPTION%}/g, product.description);
-
+  output = output.replace(
+    /{%SLUG%}/g,
+    slugify(product.productName, { lower: true })
+  );
   if (!product.organic)
     output = output.replace(/{%NOT_ORGANIC%}/g, "not-organic");
 
