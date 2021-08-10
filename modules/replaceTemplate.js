@@ -1,5 +1,4 @@
 module.exports = (temp, product) => {
-  console.log({ product });
   // * global variables
   let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
   output = output.replace(/{%IMAGE%}/g, product.image);
